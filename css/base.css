@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--fixed-background);
+}
+main {
+  flex: 1;
+}
+.main-header {
+  padding: 5.5rem 2rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "top"
+    "pics";
+  row-gap: 0.75rem;
+  position: sticky;
+  z-index: 100;
+  left: 0;
+  width: 100%;
+  background: var(--fixed-background);
+}
+.main-nav {
+  display: contents;
+}
+.head-text {
+  grid-area: top;
+  align-self: start;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: monospace;
+  text-decoration: none;
+}
+.mobile-menu {
+  grid-area: top;
+}
+.head-text .logo-mark,
+.head-text .logo-name {
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+.head-text .logo-mark {
+  font-size: 2.3rem;
+  line-height: 1;
+}
+.head-text .logo-name {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.head-nav {
+  list-style: none;
+  display: none;
+}
+.head-nav li {
+  padding: 0.2rem 0;
+}
+.nav-links {
+  color: var(--mobile-color);
+  text-decoration: none;
+  font-size: 1.7rem;
+  line-height: 2.6rem;
+  letter-spacing: 0rem;
+  font-weight: 600;
+}
+
+.nav-pictures {
+  gap: 11rem;
+  margin-top: 0.5rem;
+  justify-content: center;
+  display: none;
+  filter: brightness(0.3);
+}
+.hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 3rem;
+  background: none;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  margin-left: auto;
+}
+.hamburger svg {
+  width: 3rem;
+  height: 3rem;
+}
+.menu-hidden {
+  position: absolute;
+  width: 0.1rem;
+  height: 0.1rem;
+  margin: -0.1rem;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.mobile-nav {
+  list-style: none;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+.mobile-nav li {
+  padding: 0.3rem 0;
+}
+
+.footer {
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  font-size: clamp(1rem, 1.8vw, 1.8rem);
+  line-height: 2.6rem;
+  letter-spacing: 0rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--dark-content);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--fixed-background);
+}
+.footer-gradient,
+.footer-name,
+.footer-gray {
+  -webkit-text-fill-color: var(--dark-content);
+  color: var(--dark-content);
+}
+
+.footer-love,
+.footer-coffee {
+  background: var(--footer-name);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+@media (min-width: 800px) {
+  .head-nav {
+    display: flex;
+    gap: clamp(1rem, 2.5vw, 5.5rem);
+  }
+  .main-header {
+    display: flex;
+    position: static;
+    justify-content: flex-start;
+    align-items: center;
+    gap: clamp(2rem, 4vw, 5rem);
+    width: 100%;
+    max-width: var(--page-width);
+    margin: auto;
+    padding: 6rem var(--page-padding-x) 4rem;
+  }
+  .head-text {
+    margin-right: auto;
+    width: 9.7rem;
+    height: 5.9rem;
+    justify-content: space-between;
+  }
+  .head-text .logo-mark {
+    font-size: 3.2rem;
+    line-height: 1.1;
+  }
+  .head-text .logo-name {
+    font-size: 2.3rem;
+    line-height: 1.1;
+  }
+  .nav-links {
+    color: var(--dark-content);
+    white-space: nowrap;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "DM Sans", sans-serif;
+  }
+  .nav-pics {
+    width: 3rem;
+    height: 2.923rem;
+  }
+  .nav-pictures {
+    gap: 1.6rem;
+    display: flex;
+    filter: brightness(1);
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+  .footer {
+    position: relative;
+    background: transparent;
+    font-weight: 400;
+    padding-bottom: 2.5rem;
+  }
+  .footer-gradient {
+    background: var(--footer-name);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  .footer-name,
+  .footer-love,
+  .footer-coffee {
+    background: none;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  .footer-gray {
+    -webkit-text-fill-color: var(--light-content);
+    color: var(--light-content);
+  }
+  .nav-pictures a:nth-child(1) {
+    order: 2;
+  }
+  .nav-pictures a:nth-child(2) {
+    order: 3;
+  }
+  .nav-pictures a:nth-child(3) {
+    order: 1;
+  }
+}

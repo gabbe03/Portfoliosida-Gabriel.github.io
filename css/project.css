@@ -1,0 +1,170 @@
+.main-header {
+  position: fixed;
+}
+.project-content {
+  flex: 1;
+  width: 100%;
+  max-width: var(--page-width);
+  margin: auto;
+  padding: 15rem 3.5rem 4rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.project-title {
+  font-size: 2rem;
+  font-style: bold;
+  color: var(--mobile-color);
+  font-weight: 700;
+}
+.project-text {
+  margin-top: 0.4rem;
+  font-size: 2rem;
+  color: var(--dark-content);
+  font-weight: 400;
+  display: none;
+}
+
+.project-grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+}
+
+.project-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0.4rem 1.6rem 0 var(--card-shadow);
+  background: var(--card-background);
+}
+.project-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+.project-body {
+  padding: 2rem 1.5rem 1rem;
+}
+.project-name {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: var(--mobile-color);
+  font-weight: 600;
+}
+.project-desc {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: var(--dark-content);
+  font-weight: 400;
+}
+
+.project-stack {
+  margin-top: 1.4rem;
+  font-size: 1.3rem;
+  line-height: 2.6rem;
+  letter-spacing: 0rem;
+  color: var(--mobile-color);
+  font-weight: 400;
+}
+.project-stack-label {
+  font-weight: 500;
+}
+
+.project-links {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  margin-top: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2.4rem;
+  font-weight: 500;
+}
+.project-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.4rem;
+  color: var(--mobile-color);
+  text-decoration: underline;
+}
+.project-link-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  object-fit: contain;
+  filter: brightness(0.3);
+}
+.footer {
+  padding-right: 8rem;
+}
+
+@media (min-width: 800px) {
+  .main-header {
+    position: sticky;
+  }
+  .project-content {
+    padding: 3rem var(--page-padding-x) 8rem;
+    max-width: 122.3rem;
+  }
+  .project-title {
+    padding-top: 6rem;
+    font-size: 4.2rem;
+    line-height: 2.6rem;
+    color: var(--main-text-heading);
+  }
+  .project-text {
+    margin-top: 1.4rem;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    display: block;
+  }
+  .project-grid {
+    margin-top: 10rem;
+    max-width: none;
+    grid-template-columns: repeat(auto-fit, 37.3rem);
+    gap: 4.2rem;
+    justify-content: center;
+  }
+  .project-card {
+    border-radius: 2rem;
+    min-height: 56.7rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.2rem 0.2rem 10rem 0rem var(--card-shadow);
+  }
+  .project-img {
+    height: 25.5rem;
+    aspect-ratio: auto;
+    flex-shrink: 0;
+  }
+  .project-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem 3rem;
+  }
+  .project-links {
+    margin-top: auto;
+  }
+  .project-name {
+    font-size: 2.8rem;
+    line-height: 2.6rem;
+    font-weight: 500;
+  }
+  .project-desc {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    font-weight: 300;
+  }
+  .project-stack,
+  .project-link {
+    font-size: 1.6rem;
+    color: var(--main-text-heading);
+  }
+  .project-link-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}

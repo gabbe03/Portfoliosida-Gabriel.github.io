@@ -1,0 +1,38 @@
+html {
+  font-size: 62.5%;
+}
+:root {
+  /* Page layout */
+  --page-width: 119.3rem;
+  --page-padding-x: clamp(1rem, 4vw, 0rem);
+
+  /* Header colors */
+  --brand-gradient: linear-gradient(90deg, #00c0fd, #e70faa);
+
+  /* Footer colors */
+  --footer-name: linear-gradient(90deg, #13b0f5 -50%, #e70faa 100%);
+
+  /* Universal colors */
+  --main-text-heading: #42446e;
+  --dark-content: #666666;
+  --light-content: #a7a7a7;
+  --mobile-color: #000;
+  --fixed-background: #fff;
+
+  /* Home page colors */
+  --main-text-gradient: linear-gradient(90deg, #13b0f5 -50%, #ca24b4 180%);
+  --border-gradient: linear-gradient(180deg, #e70faa, #00c0fd);
+
+  /* About page colors */
+  --button-text: #018c0f;
+  --button-success: #d7ffe0;
+  --bottom-border: #ebeaed;
+
+  /* Projects page colors */
+  --card-shadow: #00000033;
+
+  /* Contact page colors */
+  --contact-title: #1e0e62;
+  --contact-mail-desktop: linear-gradient(90deg, #13b0f5 -25.06%, #e70faa 130%);
+  --contact-mail-mobile: linear-gradient(90deg, #13b0f5 -100%, #e70faa 170%);
+}

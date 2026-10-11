@@ -1,0 +1,63 @@
+.contact-content {
+  flex: 1;
+  width: 100%;
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 8rem 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.9rem;
+  line-height: 5rem;
+  letter-spacing: -0.1rem;
+}
+
+.contact-title {
+  color: var(--contact-title);
+  font-size: 2.4rem;
+}
+
+.contact-mail,
+.contact-phone {
+  text-decoration: none;
+  background: var(--contact-mail-mobile);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-size: 2.4rem;
+}
+.contact-or {
+  margin-top: 0.4rem;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  color: var(--dark-content);
+}
+.footer {
+  padding-right: 8rem;
+}
+@media (min-width: 800px) {
+  .contact-content {
+    padding: 10rem var(--page-padding-x) 12rem; /* header is static on desktop */
+  }
+  .contact-mail {
+    font-size: 5.8rem;
+    line-height: 7rem;
+    background: var(--contact-mail-desktop);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  .contact-title {
+    font-size: 5.8rem;
+    line-height: 7rem;
+    color: var(--main-text-heading);
+  }
+
+  .contact-phone,
+  .contact-or {
+    display: none;
+  }
+}

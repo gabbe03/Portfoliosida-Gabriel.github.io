@@ -1,0 +1,100 @@
+.about-title {
+  color: var(--mobile-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: clamp(0.5rem, 4.2rem, 3rem);
+  line-height: 5.2rem;
+  letter-spacing: -0.04rem;
+  margin: 2rem 0 1rem;
+}
+
+.about-title:first-child {
+  margin-top: 0;
+}
+.about-content {
+  width: 100%;
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  font-family: "Poppins", sans-serif;
+}
+.about-content > * {
+  max-width: 71rem;
+}
+.about-text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--dark-content);
+}
+
+.job {
+  padding: 1rem 0;
+  border-bottom: 0.1rem solid var(--bottom-border);
+}
+.job-top,
+.job-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.job-title {
+  font-weight: 400;
+  font-size: 2rem;
+  color: var(--dark-content);
+  letter-spacing: 0.1rem;
+}
+.badge {
+  background: var(--button-success);
+  color: var(--button-text);
+  font-size: 1.2rem;
+  padding: 0.2rem 0.75rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.job-bottom {
+  margin-top: 0.35rem;
+  font-size: 1.2rem;
+  color: var(--dark-content);
+}
+.job-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 1.2rem;
+}
+.job-meta span,
+.job-date {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  white-space: nowrap;
+}
+.location-icon {
+  width: 1.6rem;
+  height: 1.2rem;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: brightness(0.3);
+}
+.date-icon {
+  display: none;
+}
+@media (min-width: 800px) {
+  .about-title {
+    color: var(--main-text-heading);
+  }
+  .about-content {
+    padding: 1rem var(--page-padding-x);
+  }
+  .job-bottom {
+    color: var(--light-content);
+  }
+  .location-icon {
+    filter: brightness(1);
+  }
+  .date-icon {
+    display: block;
+  }
+}
