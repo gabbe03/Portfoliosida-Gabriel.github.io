@@ -14,4 +14,4 @@ Det som blev bra är att sajten följer skissen nära, CSS:en är strukturerad i
 
 Jag använde mest calude för att snabbt göra layouten till sidorna sen la jag till måtten själv för alla element i css.
 
-http://127.0.0.1:5500/pages/project.html
+https://stirring-donut-8ebadd.netlify.app/

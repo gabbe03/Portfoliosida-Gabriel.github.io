@@ -25,8 +25,8 @@
     filter: brightness(1.5);
   }
 }
-@media (prefers-color-scheme: dark) and (max-width: 700px) {
+@media (prefers-color-scheme: dark) and (max-width: 800px) {
   .home-page .main-header .nav-pics {
-    filter: invert(1) brightness(3);
+    filter: brightness(10);
   }
 }
